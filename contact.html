@@ -32,24 +32,29 @@
                   <h3>Category</h3>
             <hr>
             <ul>
+
                 <li>All Items</li>
                 <li>Cameras</li>
                 <li>Laptops</li>
                 <li>Phones</li>
                 <li>Accessories</li>
                 <li>Other</li>
+
             </ul>
             </section>
 
             <section>
+
                  <h3>Price <span>($)</span></h3>
             <hr>
             <ul>
+
                 <li>1-9</li>
                 <li>10-29</li>
                 <li>30-59</li>
                 <li>60-99</li>
                 <li>100 +</li>
+
             </ul>
             </section>
 
@@ -60,6 +65,7 @@
             <h2>Contact Us:</h2>
 
             <form>
+
                 <div>
                     <label for="name">Name: </label><input type="text" placeholder="Enter your name" id="name" name="name">
                 </div>
@@ -72,9 +78,27 @@
                     <label for="message">Message: </label><textarea cols="30" rows="5" id="message"></textarea>
                 </div>
 
-                <div>
-                    <label for="subject">Subject: </label><input type="subject" placeholder="Enter your subject" id="subject">
-                </div>
+               <div>
+                <label for="subject">Subject:</label>
+                <select id="subject">
+
+                   <optgroup label="Product Issues">
+                        <option value="returns">Returns</option>
+                        <option value="faulty_item">Faulty items</option>
+                   </optgroup>
+
+                    <optgroup label="Delivery">
+                        <option value="delivery">Delivery info</option>
+                        <option value="order_tracking">Tracking my order</option>
+                    </optgroup>
+                    
+                    <optgroup label="Other"> 
+                        <option value="advice">Advice</option>
+                        <option value="other">Other</option>
+                </optgroup>
+                   
+                </select>
+               </div>
 
                 <div>
                     <p>Subscribe to future offers by:</p>
