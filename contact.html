@@ -61,7 +61,7 @@
 
             <form>
                 <div>
-                    <label for="name">Name: </label><input type="text" placeholder="Enter your name" id="name">
+                    <label for="name">Name: </label><input type="text" placeholder="Enter your name" id="name" name="name">
                 </div>
 
                 <div>
@@ -70,6 +70,31 @@
 
                 <div>
                     <label for="message">Message: </label><textarea cols="30" rows="5" id="message"></textarea>
+                </div>
+
+                <div>
+                    <label for="subject">Subject: </label><input type="subject" placeholder="Enter your subject" id="subject">
+                </div>
+
+                <div>
+                    <p>Subscribe to future offers by:</p>
+                    <label for="newsletter">Newsletter</label>
+                    <input type="checkbox" id="newsletter" name="Subscribe" value="newsletter">
+
+                    <label for="email">Email</label>
+                    <input type="checkbox" id="email" name="Subscribe" value="email">
+
+                    <label for="post">Post</label>
+                    <input type="checkbox" id="post" name="Subscribe" value="post">
+                </div>
+
+                <div>
+                    <p>How would like us to respond?</p>
+                    <label for="phoneRespose">Phone</label>
+                    <input type="radio" id="phoneRespose" name="response">
+
+                    <label for="emailResponse">Email</label>
+                    <input type="radio" id="emailResponse" name="response">
                 </div>
               
             </form>
