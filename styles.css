@@ -1,0 +1,14 @@
+html {
+    background: grey;
+}
+
+body {
+    background: white;
+    max-width: 1000px;
+    margin: 0;
+}
+
+header, footer {
+    background: grey;
+    color: white;
+}
