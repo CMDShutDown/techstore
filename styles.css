@@ -2,18 +2,25 @@ html {
     background: grey;
 }
 
+/* Body */
 body {
     font-family:'Barlow', sans-serif;
     background: white;
-    max-width: auto;
-    margin: 0;
+   /* max-width: 80vw; */
+    margin: 0 auto;
     color: rgb(49, 46, 46);
+    text-align: center;
 }
 
+/* Main */
 header, footer {
     background: maroon;
     color: white;
     padding: 20px 10px;
+}
+
+input[type="search"] {
+    width: 100%;
 }
 
 ul {
@@ -44,29 +51,18 @@ header h1, nav {
 }
 
 header h1 {
-    width: 70%;
-}
-
-main {
-    width: 680px;
-    display: inline-block;
-    padding: 10px;
-}
-
-aside {
-    width: 270px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
+    /* width: 70%; */
+    width: 100%;
 }
 
 .product {
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 200px;
+   /* width: 30%; */
     margin: 5px;
     padding: 5px;
-    display:inline-block ;
+    width: 100%;
+    text-align: center;
 }
 
 img {
@@ -122,3 +118,83 @@ input[type="text"], input[type="email"], textarea {
     padding: 10px;
     width: 400px;
 }
+
+/* Table */
+table {
+ width: 400px;
+ text-align: left;
+ margin: 20px 0;   
+}
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: white;
+}
+
+@media(min-width: 800px) {
+    input[type="search"] {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .product {
+        display:inline-block;
+        width: 48%%;
+
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        text-align: left;
+    }
+
+    header h1 {
+            width: 60%;
+    }    
+
+     main {
+        width: 68%;
+        display: inline-block;
+        padding: 10px;
+    } 
+
+    aside {
+        width: 27%;
+         display: inline-block;
+         vertical-align: top;
+         padding: 10px;
+    } 
+
+}
+
+@media (min-width: 1200px) {
+    body {
+     max-width: 80vw;
+    }
+
+    .product {
+        width: 30%;
+    }
+
+    input[type="search"] {
+        width: 20%;
+    }
+}
+
